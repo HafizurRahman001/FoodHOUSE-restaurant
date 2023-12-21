@@ -1,0 +1,46 @@
+{%extends 'base.html' %}
+{% load static %}
+
+{%block stylecontent%}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{%endblock%}
+{%block content%}
+<div class="meal_card_section">
+    <h1 class='text-center meal_heading pt-4'>Delacious Food Items</h1>
+    {% comment %} meal card section  {% endcomment %}
+    <div class="card_section container pt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            {% for meal in categories %}
+                <div class="col">
+                <div class="card h-100">
+                    <img src={{meal.strCategoryThumb}} class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title text-center id-category"> {{meal.idCategory}} </h5>
+                    <h5 class="card-title text-center"> {{meal.strCategory}} </h5>
+                    <p class="card-text"> {{meal.strCategoryDescription | truncatewords:10}}</p>
+                    <div class="btn btn-secondary w-100">View more</div>
+                    </div>
+                </div>
+                </div>
+            {% endfor %}
+          </div>
+    </div>
+
+    {% comment %} pagination  {% endcomment %}
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center py-4">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+</div>
+
+
+    {%endblock%}

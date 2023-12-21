@@ -1,0 +1,64 @@
+{%extends 'base.html' %}
+{%load static%}
+
+
+
+    {%block stylecontent%}
+    <link rel="stylesheet" href="{%static 'css/about.css' %}">
+    {%endblock%}
+
+{%block content%}
+    <div class="story_section container my-5">
+        <div class="row d-flex align-items-center justify-content-center story_card">
+            <div class="col-6 ps-5">
+                <h1>About Our Story</h1>
+                <p class='gray_txt'>Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="btn btn-danger">View Full Menu</div>
+            </div>
+            <div class="col-6 py-2">
+                <img class='img-fluid' src="{% static 'images/menu.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="service_section  ">
+        <div class="service_heading my-5 text-center">
+            <h1>What Kind of Services we Offer</h1>
+            <p class="gray_txt">Who are in extremely love with eco friendly system.</p>
+        </div>
+        <div class="service_img_section container my-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="{% static 'images/service1.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Bread Fruit Cheese Sandwich</h5>
+                      <p class="card-text gray_txt">inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.</p>
+                      <div class="btn btn-primary">Details</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="{% static 'images/service2.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Beef Cutlet with Spring Onion</h5>
+                      <p class="card-text gray_txt">inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.</p>
+                      <div class="btn btn-primary">Details</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="{% static 'images/service3.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Meat with sauce & Vegetables</h5>
+                      <p class="card-text gray_txt">inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.</p>
+                      <div class="btn btn-primary">Details</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+{%endblock%}

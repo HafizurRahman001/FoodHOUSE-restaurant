@@ -1,0 +1,13 @@
+.meal_heading {
+    color: darkcyan;
+}
+
+.id-category {
+    border-radius: 16px;
+    background-color: #d8bfd870;
+}
+
+.meal_card_section {
+    background: rgb(157, 164, 250);
+    background: linear-gradient(0deg, rgba(157, 164, 250, 0.3255427170868347) 26%, rgba(245, 172, 247, 0.34234943977591037) 100%);
+}
